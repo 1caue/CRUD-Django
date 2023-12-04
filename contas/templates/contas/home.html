@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gc Associados</title>
+</head>
+
+<body>
+    <h1>Boa Tarde!</h1>
+
+    <p>Agora são: {{ now }}</p>
+
+    <ul>
+        {% for transação in transações %}
+        
+        {% if transação == "t1"%}
+        <li><b>{{ transação }}</b></li>
+
+        {% else %}
+        <li>{{ transação }}</li>
+
+        {% endif %}
+        <li> {{ transação }} </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
